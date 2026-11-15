@@ -41,10 +41,12 @@ video{width:100%;border-radius:10px;background:#111;max-height:60vh}
 #lb{position:fixed;inset:0;background:#000;z-index:20;display:none;align-items:center;justify-content:center}#lb img{max-width:100%;max-height:100%}#lb button{position:absolute;top:12px;right:12px}
 #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#111;border:1px solid var(--b);padding:10px 16px;border-radius:12px;display:none;z-index:30}
 a{color:var(--b)}
+#sv{font-size:11px;padding:4px 8px;border-radius:8px;border:1px solid var(--l);max-width:40%;text-align:right}#sv.ok{color:var(--g);border-color:#39ff8855}#sv.bad{color:#ff6b6b;border-color:#ff6b6b}
+@media(min-width:900px){main{max-width:1000px}.grid{grid-template-columns:repeat(3,1fr)}.photos{grid-template-columns:repeat(4,1fr)}video{max-height:70vh}}
 </style>
 </head>
 <body>
-<header><button id="back" onclick="go('home')">←</button><img src="icon-192.png" alt="EKORUSTIKA logo"><h1>EKORUSTIKA DATA HUB<small>Upravljačko sučelje EKORUSTIKA GROUP · v1.0 MVP</small></h1></header>
+<header><button id="back" onclick="go('home')">←</button><img src="icon-192.png" alt="EKORUSTIKA logo"><h1>EKORUSTIKA DATA HUB<small>Upravljačko sučelje EKORUSTIKA GROUP · v1.1</small></h1><span id="sv" class="ok" style="margin-left:auto"></span></header>
 <main id="app"></main>
 <div id="lb" onclick="this.style.display='none'"><img id="lbimg" alt=""><button class="btn o">✕</button></div>
 <div id="toast"></div>
